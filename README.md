@@ -1,175 +1,91 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-<meta charset="UTF-8">
-<title>NLPify</title>
+# 🚀 NLP Toolkit App
 
-<style>
-    body {
-        margin: 0;
-        font-family: 'Segoe UI', sans-serif;
-        background: #0f172a;
-        color: #e2e8f0;
-    }
+A powerful and beginner-friendly desktop application built using Python and Tkinter that performs multiple Natural Language Processing (NLP) tasks like:
 
-    .container {
-        width: 85%;
-        margin: auto;
-        padding: 20px;
-    }
+✨ Sentiment Analysis
+✨ Emotion Detection
+✨ Named Entity Recognition (NER)
 
-    h1 {
-        text-align: center;
-        font-size: 40px;
-        background: linear-gradient(90deg, #38bdf8, #6366f1);
-        -webkit-background-clip: text;
-        color: transparent;
-        margin-bottom: 10px;
-    }
+All wrapped in a simple and clean GUI.
 
-    .subtitle {
-        text-align: center;
-        color: #94a3b8;
-        margin-bottom: 40px;
-    }
+## 📌 FEATURES
 
-    .card {
-        background: #1e293b;
-        padding: 20px;
-        border-radius: 12px;
-        margin-bottom: 25px;
-        transition: 0.3s;
-        box-shadow: 0 5px 15px rgba(0,0,0,0.4);
-    }
+✔ User Authentication System (Login/Register)<br>
+✔ Sentiment Analysis of text<br>
+✔ Emotion Prediction<br>
+✔ Named Entity Recognition<br>
+✔ Clean Tkinter-based GUI<br>
+✔ Modular Code Structure (Database + API separation)
 
-    .card:hover {
-        transform: translateY(-5px);
-        box-shadow: 0 10px 25px rgba(0,0,0,0.6);
-    }
+## 🛠️ TECH STACK
 
-    h2 {
-        color: #38bdf8;
-        border-bottom: 1px solid #334155;
-        padding-bottom: 5px;
-    }
+• Python 🐍<br>
+• Tkinter (GUI) <br>
+• Custom API Integration <br>
+• File-based / DB-based storage <br>
 
-    ul {
-        padding-left: 20px;
-        line-height: 1.8;
-    }
+## 📂 PROJECT STRUCTURE
 
-    code {
-        background: #020617;
-        padding: 6px 10px;
-        border-radius: 6px;
-        color: #38bdf8;
-    }
-
-    .grid {
-        display: grid;
-        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-        gap: 20px;
-    }
-
-    .badge {
-        display: inline-block;
-        background: #334155;
-        padding: 6px 12px;
-        margin: 5px;
-        border-radius: 20px;
-        font-size: 14px;
-    }
-
-    .footer {
-        text-align: center;
-        margin-top: 40px;
-        color: #64748b;
-        font-size: 14px;
-    }
-</style>
-</head>
-
-<body>
-
-<div class="container">
-
-    <h1>NLP Multi Analyzer</h1>
-    <p class="subtitle">
-        Smart NLP-powered text analysis with a clean GUI — built for extensibility
-    </p>
-
-    <div class="card">
-        <h2>Overview</h2>
-        <p>
-            A desktop-based Natural Language Processing (NLP) application built with Python and Tkinter.
-            It enables users to analyze text using multiple NLP techniques in an intuitive interface.
-        </p>
-        <p>
-            The system is modular and designed for future expansion with advanced NLP capabilities.
-        </p>
-    </div>
-
-    <div class="card">
-        <h2>Core Features</h2>
-        <div class="grid">
-            <div class="badge">User Authentication</div>
-            <div class="badge">Sentiment Analysis</div>
-            <div class="badge">Emotion Detection</div>
-            <div class="badge">NER</div>
-            <div class="badge">GUI Interface</div>
-            <div class="badge">API Integration</div>
-        </div>
-    </div>
-
-    <div class="card">
-        <h2>Technology Stack</h2>
-        <ul>
-            <li>Python</li>
-            <li>Tkinter GUI</li>
-            <li>Custom Database Module</li>
-            <li>NLP APIs</li>
-        </ul>
-    </div>
-
-    <div class="card">
-        <h2>Project Structure</h2>
-<pre>
-NLPAPP/
+NLPApp/ <br>
 │
-├── main.py
-├── mydb.py
-├── myapi.py
-├── Resource/
-└── README
-</pre>
-    </div>
+├── main.py              → Main GUI Application<br>
+├── mydb.py              → Database Handling <br>
+├── myapi.py             → NLP API Functions <br>
+├── Resource/            → Icons & Assets <br>
+└── README.txt           → Project Documentation <br>
 
-    <div class="card">
-        <h2>Run Application</h2>
-        <p>Execute the following command:</p>
-        <code>python main.py</code>
-    </div>
+## ⚙️ INSTALLATION
 
-    <div class="card">
-        <h2>Future Scope</h2>
-        <ul>
-            <li>Text Summarization</li>
-            <li>Language Translation</li>
-            <li>Chatbot Integration</li>
-            <li>Offline NLP Models</li>
-        </ul>
-    </div>
+1. Clone the repository
+   git clone https://github.com/your-username/NLP-Toolkit-App.git
 
-    <div class="card">
-        <h2>Author</h2>
-        <p>Sachin Rawal</p>
-    </div>
+2. Navigate into the folder
+   cd NLP-Toolkit-App
 
-    <div class="footer">
-        <p>Built for learning, experimentation, and future NLP innovation.</p>
-    </div>
+3. Install dependencies (if any)
+   pip install -r requirements.txt
 
-</div>
+4. Run the application
+   python main.py
 
-</body>
-</html>
+## 🔐 LOGIN SYSTEM
+
+• New users can register <br>
+• Existing users can login <br>
+• Duplicate emails are prevented <br>
+
+## 🧠 NLP FEATURES
+
+1. Sentiment Analysis
+   → Detects whether text is Positive, Negative, or Neutral
+
+2. Emotion Detection
+   → Predicts emotions like Happy, Sad, Angry
+
+3. Named Entity Recognition (NER)
+   → Extracts names, places, organizations from text
+
+## 📸 SAMPLE WORKFLOW
+
+1. Login / Register
+2. Choose NLP Feature
+3. Enter Text
+4. Click Analyze
+5. View Results
+
+## 🚧 FUTURE IMPROVEMENTS
+
+• Add Dark Mode 🌙 <br>
+• Improve UI/UX design <br>
+• Add Speech-to-Text 🎤 <br>
+
+## 🤝 CONTRIBUTION
+
+Feel free to fork this repo and improve it!
+Pull requests are welcome 🚀
+
+## 📧 AUTHOR
+
+Sachin Rawal
+
+⭐ If you like this project, don't forget to star the repo!
