@@ -37,7 +37,7 @@ NLPApp/ <br>
 ## ⚙️ INSTALLATION
 
 1. Clone the repository
-   git clone https://github.com/your-username/NLP-Toolkit-App.git
+   git clone https://github.com/Sachin-Rawal091/NLPify
 
 2. Navigate into the folder
    cd NLP-Toolkit-App
